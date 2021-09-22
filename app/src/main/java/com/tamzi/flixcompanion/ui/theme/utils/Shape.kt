@@ -1,4 +1,4 @@
-package com.tamzi.flixcompanion.ui.theme
+package com.tamzi.flixcompanion.ui.theme.utils
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
