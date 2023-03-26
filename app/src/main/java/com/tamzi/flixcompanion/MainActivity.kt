@@ -1,41 +1,43 @@
 package com.tamzi.flixcompanion
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.tamzi.flixcompanion.ui.theme.*
-import java.lang.reflect.Modifier
+import com.tamzi.flixcompanion.ui.theme.FlixCompanionTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            FlixcompanionTheme {
+            FlixCompanionTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(color = gray) {
-                    Greeting("Android")
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background
+                ) {
+                    Greeting("flixCompanion")
                 }
             }
         }
     }
 }
 
-
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!",color = limeGreenish)
+    Text(text = "Hello $name!")
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    FlixcompanionTheme {
+    FlixCompanionTheme {
         Greeting("Android")
     }
 }

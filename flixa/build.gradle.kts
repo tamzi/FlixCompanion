@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    namespace = "com.tamzi.flixa"
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 26
-        targetSdk = 33
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -23,49 +23,25 @@ android {
             )
         }
     }
-    testOptions {
-        unitTests {
-            isIncludeAndroidResources = true
-        }
-    }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 
-    buildFeatures {
-        compose = true
-    }
-
-    packagingOptions {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.2.0"
-    }
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    api(libs.androidx.compose.foundation)
-    api(libs.androidx.compose.foundation.layout)
-    api(libs.androidx.compose.material.iconsExtended)
-    api(libs.androidx.compose.material3)
-    debugApi(libs.androidx.compose.ui.tooling)
-    api(libs.androidx.compose.ui.tooling.preview)
-    api(libs.androidx.compose.ui.util)
-    api(libs.androidx.compose.runtime)
 
-    // These dependencies are currently necessary to render Compose previews
-    debugImplementation(libs.androidx.customview.poolingcontainer)
-    debugImplementation(libs.androidx.lifecycle.viewModelCompose)
-    debugImplementation(libs.androidx.savedstate.ktx)
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.8.0")
+    implementation("androidx.core:core-ktx:1.9.0")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
