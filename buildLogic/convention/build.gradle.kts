@@ -18,7 +18,7 @@ dependencies {
 }
 gradlePlugin{
     plugins{
-       /* Common android & kotlin options*/
+        /* Common android & kotlin options*/
         register("androidLibrary") {
             id = "flixcompanion.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
@@ -54,7 +54,7 @@ gradlePlugin{
             id = "flixcompanion.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
-       /* firebase convention*/
+        /* firebase convention*/
         register("androidFirebase") {
             id = "flixcompanion.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
