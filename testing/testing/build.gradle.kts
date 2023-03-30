@@ -1,46 +1,27 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id("flixcompanion.android.library")
+    id("flixcompanion.android.library.compose")
+    id("flixcompanion.android.hilt")
 }
 
 android {
     namespace = "com.tamzi.testing"
-    compileSdk = 33
-
-    defaultConfig {
-        minSdk = 26
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-
 }
 
 dependencies {
+    api(libs.androidx.test.core)
+    api(libs.androidx.compose.ui.test)
+    api(libs.androidx.test.espresso.core)
+    api(libs.androidx.test.rules)
+    api(libs.androidx.test.runner)
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    api(libs.junit4)
+
+    api(libs.hilt.android.testing)
+
+    api(libs.kotlinx.coroutines.test)
+    api(libs.turbine)
+
+    debugApi(libs.androidx.compose.ui.testManifest)
+    implementation(libs.kotlinx.datetime)
 }
