@@ -1,5 +1,5 @@
 # Build Logic
-The `buildLogic` folder contains convention plugins that are specific for the 
+The `buildLogic` folder contains convention plugins that are specific for the project
 
 
 Current list of convention plugins:

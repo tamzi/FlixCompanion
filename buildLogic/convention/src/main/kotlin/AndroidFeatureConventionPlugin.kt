@@ -13,8 +13,9 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target){
             pluginManager.apply {
-                apply("tamzi.android.library")
-                apply("tamzi.android.hilt")
+                // As my personal best practice, It is Better to maintain name of the project here instead of a new namespace
+                apply("flixcompanion.android.library")
+                apply("flixcompanion.android.hilt")
             }
 
             extensions.configure<LibraryExtension> {
