@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.datastore"
+    namespace = "com.flixcompanion.datastore"
     compileSdk = 33
 
     defaultConfig {
@@ -31,7 +31,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "19"
+        jvmTarget = "11"
     }
 
 }

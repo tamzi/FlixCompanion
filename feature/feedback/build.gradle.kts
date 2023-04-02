@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.feedback"
+    namespace = "com.flixcompanion.feedback"
     compileSdk = 33
 
     defaultConfig {

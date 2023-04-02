@@ -1,10 +1,9 @@
 package com.tamzi.convention
 
-
 import com.android.build.api.dsl.CommonExtension
 import com.android.build.api.dsl.ManagedVirtualDevice
 import org.gradle.kotlin.dsl.invoke
-import java.util.Locale
+import java.util.*
 
 /**
  * Configure project for Gradle managed devices
@@ -39,7 +38,7 @@ private data class DeviceConfig(
     val systemImageSource: String,
 ) {
     val taskName = buildString {
-        append(device.toLowerCase(Locale.ROOT).replace(" ", ""))
+        append(device.lowercase(Locale.ROOT).replace(" ", ""))
         append("api")
         append(apiLevel.toString())
         append(systemImageSource.replace("-", ""))

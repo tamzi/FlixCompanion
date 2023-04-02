@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = ("FlixCompanion")
-include (":app")
+include(":app")
 include(":flixa")
 include(":lint")
 include(":flixacatalog")
@@ -29,7 +29,7 @@ include(":core:database")
 include(":core:domain")
 include(":core:utils")
 
-include(":testing:testing")
+include(":testing:coretest")
 include(":testing:datastoreTest")
 include(":testing:dataTest")
 

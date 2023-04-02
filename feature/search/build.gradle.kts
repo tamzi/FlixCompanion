@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.search"
+    namespace = "com.flixcompanion.search"
     compileSdk = 33
 
     defaultConfig {
