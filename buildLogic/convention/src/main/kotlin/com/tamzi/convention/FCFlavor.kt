@@ -1,6 +1,5 @@
 package com.tamzi.convention
 
-
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.ApplicationProductFlavor
 import com.android.build.api.dsl.CommonExtension
@@ -18,7 +17,7 @@ enum class FlavorDimension {
 @Suppress("EnumEntryName")
 enum class FCFlavor(val dimension: FlavorDimension, val applicationIdSuffix: String? = null) {
     demo(FlavorDimension.contentType, applicationIdSuffix = ".demo"),
-    prod(FlavorDimension.contentType, )
+    prod(FlavorDimension.contentType)
 }
 
 fun Project.configureFlavors(
