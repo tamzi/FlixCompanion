@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.settings"
+    namespace = "com.flixcompanion.settings"
     compileSdk = 33
 
     defaultConfig {
@@ -28,7 +28,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "19"
+        jvmTarget = "11"
     }
 }
 

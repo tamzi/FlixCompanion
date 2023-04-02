@@ -16,8 +16,8 @@ dependencies {
     compileOnly(libs.firebase.crashlytics.gradle)
     compileOnly(libs.ksp.gradlePlugin)
 }
-gradlePlugin{
-    plugins{
+gradlePlugin {
+    plugins {
         /* Common android & kotlin options*/
         register("androidLibrary") {
             id = "flixcompanion.android.library"
@@ -27,12 +27,12 @@ gradlePlugin{
             id = "flixcompanion.android.test"
             implementationClass = "AndroidTestConventionPlugin"
         }
-        register("AndroidApplication"){
+        register("AndroidApplication") {
             id = "flixcompanion.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         /*Compose specific*/
-        register("AndroidApplicationCompose"){
+        register("AndroidApplicationCompose") {
             id = "flixcompanion.android.application"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }

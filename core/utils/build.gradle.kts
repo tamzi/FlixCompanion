@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.utils"
+    namespace = "com.flixcompanion.utils"
     compileSdk = 33
 
     defaultConfig {
@@ -30,7 +30,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "19"
+        jvmTarget = "11"
     }
 
 }

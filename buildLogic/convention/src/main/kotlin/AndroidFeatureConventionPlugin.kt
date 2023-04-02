@@ -11,7 +11,7 @@ import org.gradle.kotlin.dsl.kotlin
 class AndroidFeatureConventionPlugin : Plugin<Project> {
 
     override fun apply(target: Project) {
-        with(target){
+        with(target) {
             pluginManager.apply {
                 apply("tamzi.android.library")
                 apply("tamzi.android.hilt")
@@ -26,7 +26,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             }
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
-            dependencies{
+            dependencies {
                 add("implementation", project(":core:data"))
                 add("implementation", project(":core:model"))
                 add("implementation", project(":core:utils"))
