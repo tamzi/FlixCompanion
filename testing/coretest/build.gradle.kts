@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.testing"
+    namespace = "com.flixcompanion.testing"
     compileSdk = 33
 
     defaultConfig {
