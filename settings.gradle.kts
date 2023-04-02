@@ -20,7 +20,6 @@ include(":lint")
 include(":flixacatalog")
 include(":benchmarks")
 
-include(":core:testing")
 include(":core:network")
 include(":core:model")
 include(":core:datastore")
@@ -29,7 +28,7 @@ include(":core:database")
 include(":core:domain")
 include(":core:utils")
 
-include(":testing:testing")
+include(":testing:coretest")
 include(":testing:datastoreTest")
 include(":testing:dataTest")
 

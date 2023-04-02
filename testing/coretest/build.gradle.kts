@@ -1,11 +1,10 @@
 plugins {
     id("flixcompanion.android.library")
     id("flixcompanion.android.library.compose")
-    id("flixcompanion.android.hilt")
 }
 
 android {
-    namespace = "com.tamzi.testing"
+    namespace = "com.flixcompanion.coretest"
 }
 
 dependencies {
