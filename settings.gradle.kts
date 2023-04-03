@@ -13,6 +13,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+/*Application modules*/
 rootProject.name = ("FlixCompanion")
 include(":app")
 include(":flixa")
@@ -20,7 +21,7 @@ include(":lint")
 include(":flixacatalog")
 include(":benchmarks")
 
-include(":core:testing")
+/*Core Modules*/
 include(":core:network")
 include(":core:model")
 include(":core:datastore")
@@ -29,11 +30,12 @@ include(":core:database")
 include(":core:domain")
 include(":core:utils")
 
+/*Testing Modules*/
 include(":testing:coretest")
 include(":testing:datastoreTest")
 include(":testing:dataTest")
 
-
+/*Feature Modules*/
 include(":feature:settings")
 include(":feature:categories")
 include(":feature:actors")
