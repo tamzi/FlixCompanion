@@ -48,4 +48,3 @@ include(":feature:bookmarks")
 include(":feature:platforms")
 include(":feature:feedback")
 include(":feature:about")
-
