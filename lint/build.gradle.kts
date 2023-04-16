@@ -1,9 +1,15 @@
 plugins {
-    id("java-library")
-    id("org.jetbrains.kotlin.jvm")
+    `java-library`
+    kotlin("jvm")
+    id("com.android.lint")
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    compileOnly(libs.kotlin.stdlib)
+    compileOnly(libs.lint.api)
 }
