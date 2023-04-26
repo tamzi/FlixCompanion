@@ -51,3 +51,4 @@ include(":feature:about")
 
 
 include(":uiTestHiltManifest")
+include(":flixwear")
