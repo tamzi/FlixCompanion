@@ -19,6 +19,7 @@ include(":flixa")
 include(":lint")
 include(":flixacatalog")
 include(":benchmarks")
+//include(":flixwear")
 
 include(":core:testing")
 include(":core:network")
@@ -51,4 +52,4 @@ include(":feature:about")
 
 
 include(":uiTestHiltManifest")
-include(":flixwear")
+
