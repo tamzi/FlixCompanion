@@ -23,7 +23,7 @@ private const val RESOURCES_VERSION = "0"
 /**
  * Skeleton for a tile with no images.
  */
-class MainTileService(override val lifecycle: Lifecycle) : CoroutinesTileService() {
+class MainTileService(val lifecycle: Lifecycle) : CoroutinesTileService() {
 
     override suspend fun resourcesRequest(
         requestParams: RequestBuilders.ResourcesRequest
@@ -31,7 +31,7 @@ class MainTileService(override val lifecycle: Lifecycle) : CoroutinesTileService
         return ResourceBuilders.Resources.Builder().setVersion(RESOURCES_VERSION).build()
     }
 
-    override suspend fun tileRequest(
+    suspend fun tileRequest(
         requestParams: RequestBuilders.TileRequest
     ): TileBuilders.Tile {
         val singleTileTimeline = TimelineBuilders.Timeline.Builder().addTimelineEntry(
