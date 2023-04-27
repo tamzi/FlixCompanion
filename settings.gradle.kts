@@ -52,4 +52,3 @@ include(":feature:about")
 
 
 include(":uiTestHiltManifest")
-
