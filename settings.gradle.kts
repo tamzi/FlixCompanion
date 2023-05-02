@@ -19,7 +19,8 @@ include(":flixa")
 include(":lint")
 include(":flixacatalog")
 include(":benchmarks")
-//include(":flixwear")
+include(":flixwear")
+
 
 include(":core:testing")
 include(":core:network")

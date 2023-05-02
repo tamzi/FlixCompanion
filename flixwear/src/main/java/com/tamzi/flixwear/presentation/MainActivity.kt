@@ -47,23 +47,23 @@ fun WearApp(greetingName: String) {
                 .background(MaterialTheme.colors.background),
             verticalArrangement = Arrangement.Center
         ) {
-            Greeting(greetingName = greetingName)
+            FlixWearGreeting(flixweargreeting = greetingName)
         }
     }
 }
 
 @Composable
-fun Greeting(greetingName: String) {
+fun FlixWearGreeting(flixweargreeting: String) {
     Text(
         modifier = Modifier.fillMaxWidth(),
         textAlign = TextAlign.Center,
         color = MaterialTheme.colors.primary,
-        text = stringResource(R.string.hello_world, greetingName)
+        text = stringResource(R.string.hello_world, flixweargreeting)
     )
 }
 
 @Preview(device = Devices.WEAR_OS_SMALL_ROUND, showSystemUi = true)
 @Composable
 fun DefaultPreview() {
-    WearApp("Preview Android")
+    WearApp("flixer")
 }
