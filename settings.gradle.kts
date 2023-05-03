@@ -19,7 +19,8 @@ include(":flixa")
 include(":lint")
 include(":flixacatalog")
 include(":benchmarks")
-//include(":flixwear")
+include(":flixwear")
+
 
 include(":core:testing")
 include(":core:network")
@@ -33,6 +34,7 @@ include(":core:utils")
 include(":testing:coretest")
 include(":testing:datastoreTest")
 include(":testing:dataTest")
+include(":testing:uiTestHiltManifest")
 
 
 include(":feature:settings")
@@ -51,5 +53,5 @@ include(":feature:feedback")
 include(":feature:about")
 
 
-include(":uiTestHiltManifest")
+
 
