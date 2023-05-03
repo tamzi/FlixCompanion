@@ -58,7 +58,7 @@
             <option value="$PROJECT_DIR$/testing/coretest" />
             <option value="$PROJECT_DIR$/testing/dataTest" />
             <option value="$PROJECT_DIR$/testing/datastoreTest" />
-            <option value="$PROJECT_DIR$/uiTestHiltManifest" />
+            <option value="$PROJECT_DIR$/testing/uiTestHiltManifest" />
           </set>
         </option>
       </GradleProjectSettings>

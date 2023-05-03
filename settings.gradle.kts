@@ -34,6 +34,7 @@ include(":core:utils")
 include(":testing:coretest")
 include(":testing:datastoreTest")
 include(":testing:dataTest")
+include(":testing:uiTestHiltManifest")
 
 
 include(":feature:settings")
@@ -52,5 +53,5 @@ include(":feature:feedback")
 include(":feature:about")
 
 
-include(":uiTestHiltManifest")
+
 
