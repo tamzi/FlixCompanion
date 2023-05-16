@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.flixacatalog"
+    namespace = "com.flixcompanion.flixacatalog"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.tamzi.flixacatalog"
+        applicationId = "com.flixcompanion.flixacatalog"
         minSdk = 26
         targetSdk = 33
         versionCode = 1

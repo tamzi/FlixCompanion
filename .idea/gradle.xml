@@ -44,6 +44,7 @@
             <option value="$PROJECT_DIR$/feature/genres" />
             <option value="$PROJECT_DIR$/feature/hot" />
             <option value="$PROJECT_DIR$/feature/movie" />
+            <option value="$PROJECT_DIR$/feature/onboarding" />
             <option value="$PROJECT_DIR$/feature/platforms" />
             <option value="$PROJECT_DIR$/feature/profile" />
             <option value="$PROJECT_DIR$/feature/recommended" />

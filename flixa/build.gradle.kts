@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.flixa"
+    namespace = "com.flixcompanion.flixa"
     compileSdk = 33
 
     defaultConfig {

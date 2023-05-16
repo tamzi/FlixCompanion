@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.flixwear"
+    namespace = "com.flixcompanion.flixwear"
     compileSdkPreview = "UpsideDownCake"
 
     defaultConfig {
-        applicationId = "com.tamzi.flixwear"
+        applicationId = "com.flixcompanion.flixwear"
         minSdkPreview = "UpsideDownCake"
         targetSdkPreview = "UpsideDownCake"
         versionCode = 1

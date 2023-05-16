@@ -1,7 +1,7 @@
 plugins {
     `kotlin-dsl`
 }
-group = "com.tamzi.flixcompanion.buildlogic"
+group = "com.flixcompanion.flixcompanion.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
