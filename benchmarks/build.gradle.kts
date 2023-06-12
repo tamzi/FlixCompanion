@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tamzi.benchmarks"
+    namespace = "com.flixcompanion.benchmarks"
     compileSdk = 33
 
     compileOptions {
