@@ -43,8 +43,8 @@ dependencies {
     implementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.test:rules:1.5.0")
     implementation("androidx.test:runner:1.5.2")
-    implementation("androidx.test.uiautomator:uiautomator:2.3.0-alpha03")
-    implementation("androidx.benchmark:benchmark-macro-junit4:1.1.1")
+    implementation("androidx.test.uiautomator:uiautomator:2.3.0-rc01")
+    implementation("androidx.benchmark:benchmark-macro-junit4:1.2.3")
 }
 
 androidComponents {
